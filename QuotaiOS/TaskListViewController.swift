@@ -8,8 +8,16 @@
 
 import UIKit
 
-class TaskListViewController: UIViewController, UITableViewDataSource
+class TaskListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
+    @IBOutlet weak var tasksTableView: UITableView!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad();
+        tasksTableView.reloadData();
+    }
+    
     // Returns number of sections (categories) in UITableView.
     func numberOfSections(in tableView: UITableView) -> Int
     {
@@ -19,22 +27,27 @@ class TaskListViewController: UIViewController, UITableViewDataSource
     // Returns number of rows (tasks) in UITableView.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 3;
+        return taskManager.taskList.count;
     }
     
     // Returns contents of each cell.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell();
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Default Tasks");
         
-        cell.textLabel?.text = "Task \(indexPath.row + 1)";
-        cell.detailTextLabel?.text = "Due date \(indexPath.row + 1)";
+        cell.textLabel?.text = taskManager.taskList[indexPath.row].name;
+        cell.detailTextLabel?.text = taskManager.taskList[indexPath.row].dueDate + " @ " + taskManager.taskList[indexPath.row].dueTime;
         
         return cell;
     }
     
-    override func viewDidLoad()
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
-        super.viewDidLoad();
+        if (editingStyle == UITableViewCellEditingStyle.delete)
+        {
+            taskManager.taskList.remove(at: indexPath.row);
+            tasksTableView.reloadData();
+        }
     }
+    
 }

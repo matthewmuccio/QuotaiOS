@@ -12,7 +12,7 @@
         <!--Task List-->
         <scene sceneID="aJV-qY-2l7">
             <objects>
-                <viewController storyboardIdentifier="list" title="Task List" id="WuX-VO-ndX" customClass="TaskListViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="taskListViewController" title="Task List" id="WuX-VO-ndX" customClass="TaskListViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bM7-9j-r9u"/>
                         <viewControllerLayoutGuide type="bottom" id="3c1-90-kH9"/>
@@ -26,6 +26,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="WuX-VO-ndX" id="dc3-sH-IFa"/>
+                                    <outlet property="delegate" destination="WuX-VO-ndX" id="krP-uH-Hat"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -37,6 +38,9 @@
                             <constraint firstAttribute="trailing" secondItem="3T3-4P-3ND" secondAttribute="trailing" id="z1r-lB-4KG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tasksTableView" destination="3T3-4P-3ND" id="8Ej-SW-aTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-Qh-TX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +49,7 @@
         <!--Quota-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="quota" title="Quota" id="BYZ-38-t0r" customClass="ViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" title="Quota" id="BYZ-38-t0r" customClass="ViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -133,7 +137,7 @@
         <!--Add-->
         <scene sceneID="q83-BJ-Rex">
             <objects>
-                <viewController storyboardIdentifier="add" title="Add" id="f5a-vZ-Ev1" customClass="AddTaskViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addTaskViewController" title="Add" id="f5a-vZ-Ev1" customClass="AddTaskViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rx4-pM-o8i"/>
                         <viewControllerLayoutGuide type="bottom" id="cBr-gI-lcX"/>
@@ -161,6 +165,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="f5a-vZ-Ev1" id="lDs-Nh-5So"/>
+                                </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCK-TN-mty">
                                 <rect key="frame" x="16" y="249" width="124" height="21"/>
@@ -221,6 +228,9 @@
                                         <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="lowPriorityButtonPressed:" destination="f5a-vZ-Ev1" eventType="touchUpInside" id="mWX-LD-HsU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L3-S6-fyC">
                                 <rect key="frame" x="244" y="362" width="115" height="30"/>
@@ -237,6 +247,9 @@
                                         <color key="value" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeDateButtonPressed:" destination="f5a-vZ-Ev1" eventType="touchUpInside" id="fPt-65-vtz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPd-XF-oh2">
                                 <rect key="frame" x="244" y="395" width="115" height="30"/>
@@ -253,6 +266,9 @@
                                         <color key="value" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeTimeButtonPressed:" destination="f5a-vZ-Ev1" eventType="touchUpInside" id="iVr-x0-FUo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-p6-fTr">
                                 <rect key="frame" x="142" y="275" width="90" height="45"/>
@@ -266,9 +282,12 @@
                                         <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mediumPriorityButtonPressed:" destination="f5a-vZ-Ev1" eventType="touchUpInside" id="iJv-4H-PxP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pze-Mf-wdq">
                                 <rect key="frame" x="269" y="275" width="90" height="45"/>
@@ -285,18 +304,21 @@
                                         <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="highPriorityButtonPressed:" destination="f5a-vZ-Ev1" eventType="touchUpInside" id="zh1-CB-9Ex"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfY-Sg-xCT">
-                                <rect key="frame" x="16" y="367" width="115" height="21"/>
+                                <rect key="frame" x="16" y="367" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Date: ">
+                                    <fragment content="N">
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TrebuchetMS"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Italic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="not set">
+                                    <fragment content="ot set">
                                         <attributes>
                                             <font key="NSFont" size="18" name="TrebuchetMS-Italic"/>
                                             <font key="NSOriginalFont" size="18" name="TrebuchetMS-Italic"/>
@@ -307,16 +329,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-3l-Z0U">
-                                <rect key="frame" x="16" y="400" width="115" height="21"/>
+                                <rect key="frame" x="16" y="400" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Time: ">
+                                    <fragment content="N">
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TrebuchetMS"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Italic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="not set">
+                                    <fragment content="ot set">
                                         <attributes>
                                             <font key="NSFont" size="18" name="TrebuchetMS-Italic"/>
                                             <font key="NSOriginalFont" size="18" name="TrebuchetMS-Italic"/>
@@ -332,6 +354,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="f5a-vZ-Ev1" id="hob-fE-5tc"/>
+                                </connections>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nW0-RC-Rum">
                                 <rect key="frame" x="7" y="439" width="360" height="2"/>
@@ -360,14 +385,29 @@
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" white="0.23000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addTaskButtonPressed:" destination="f5a-vZ-Ev1" eventType="touchUpInside" id="uLv-GR-mhD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="addTaskButton" destination="EFy-LF-Was" id="5ta-ZY-FE8"/>
+                        <outlet property="categoryTextView" destination="0tD-5N-yaz" id="LcO-JC-IOa"/>
+                        <outlet property="changeDateButton" destination="0L3-S6-fyC" id="kp1-Bf-6b4"/>
+                        <outlet property="changeTimeButton" destination="tPd-XF-oh2" id="2dJ-6h-XbW"/>
+                        <outlet property="dateLabel" destination="YfY-Sg-xCT" id="sm2-Lq-Op7"/>
+                        <outlet property="highPriorityButton" destination="Pze-Mf-wdq" id="Z7e-Qk-HGc"/>
+                        <outlet property="lowPriorityButton" destination="TFB-tC-pxu" id="lm1-BV-9SD"/>
+                        <outlet property="mediumPriorityButton" destination="fNA-p6-fTr" id="M6C-sJ-m5b"/>
+                        <outlet property="taskTextView" destination="oL3-Id-X6y" id="J4P-ni-NG8"/>
+                        <outlet property="timeLabel" destination="pxF-3l-Z0U" id="85V-ea-mq1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhg-Qc-50E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,7 +416,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aEJ-qI-okl">
             <objects>
-                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="5or-0T-6pZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navController" automaticallyAdjustsScrollViewInsets="NO" id="5or-0T-6pZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ewi-hc-KUd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
