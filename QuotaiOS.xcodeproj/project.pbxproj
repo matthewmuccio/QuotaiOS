@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC8493951DCE020A002EEEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493941DCE020A002EEEED /* AppDelegate.swift */; };
+		EC8493971DCE020A002EEEED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493961DCE020A002EEEED /* ViewController.swift */; };
+		EC84939A1DCE020A002EEEED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8493981DCE020A002EEEED /* Main.storyboard */; };
+		EC84939C1DCE020A002EEEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC84939B1DCE020A002EEEED /* Assets.xcassets */; };
+		EC84939F1DCE020A002EEEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC84939D1DCE020A002EEEED /* LaunchScreen.storyboard */; };
+		EC8493AA1DCE020A002EEEED /* QuotaiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493A91DCE020A002EEEED /* QuotaiOSTests.swift */; };
+		EC8493B51DCE020A002EEEED /* QuotaiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493B41DCE020A002EEEED /* QuotaiOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC8493A61DCE020A002EEEED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC8493891DCE020A002EEEED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC8493901DCE020A002EEEED;
+			remoteInfo = QuotaiOS;
+		};
+		EC8493B11DCE020A002EEEED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC8493891DCE020A002EEEED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC8493901DCE020A002EEEED;
+			remoteInfo = QuotaiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC8493911DCE020A002EEEED /* QuotaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8493941DCE020A002EEEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC8493961DCE020A002EEEED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC8493991DCE020A002EEEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC84939B1DCE020A002EEEED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC84939E1DCE020A002EEEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC8493A01DCE020A002EEEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8493A51DCE020A002EEEED /* QuotaiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotaiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8493A91DCE020A002EEEED /* QuotaiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaiOSTests.swift; sourceTree = "<group>"; };
+		EC8493AB1DCE020A002EEEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8493B01DCE020A002EEEED /* QuotaiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotaiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8493B41DCE020A002EEEED /* QuotaiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaiOSUITests.swift; sourceTree = "<group>"; };
+		EC8493B61DCE020A002EEEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC84938E1DCE020A002EEEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8493A21DCE020A002EEEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8493AD1DCE020A002EEEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC8493881DCE020A002EEEED = {
+			isa = PBXGroup;
+			children = (
+				EC8493931DCE020A002EEEED /* QuotaiOS */,
+				EC8493A81DCE020A002EEEED /* QuotaiOSTests */,
+				EC8493B31DCE020A002EEEED /* QuotaiOSUITests */,
+				EC8493921DCE020A002EEEED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC8493921DCE020A002EEEED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8493911DCE020A002EEEED /* QuotaiOS.app */,
+				EC8493A51DCE020A002EEEED /* QuotaiOSTests.xctest */,
+				EC8493B01DCE020A002EEEED /* QuotaiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8493931DCE020A002EEEED /* QuotaiOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC8493941DCE020A002EEEED /* AppDelegate.swift */,
+				EC8493961DCE020A002EEEED /* ViewController.swift */,
+				EC8493981DCE020A002EEEED /* Main.storyboard */,
+				EC84939B1DCE020A002EEEED /* Assets.xcassets */,
+				EC84939D1DCE020A002EEEED /* LaunchScreen.storyboard */,
+				EC8493A01DCE020A002EEEED /* Info.plist */,
+			);
+			path = QuotaiOS;
+			sourceTree = "<group>";
+		};
+		EC8493A81DCE020A002EEEED /* QuotaiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC8493A91DCE020A002EEEED /* QuotaiOSTests.swift */,
+				EC8493AB1DCE020A002EEEED /* Info.plist */,
+			);
+			path = QuotaiOSTests;
+			sourceTree = "<group>";
+		};
+		EC8493B31DCE020A002EEEED /* QuotaiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC8493B41DCE020A002EEEED /* QuotaiOSUITests.swift */,
+				EC8493B61DCE020A002EEEED /* Info.plist */,
+			);
+			path = QuotaiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC8493901DCE020A002EEEED /* QuotaiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8493B91DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOS" */;
+			buildPhases = (
+				EC84938D1DCE020A002EEEED /* Sources */,
+				EC84938E1DCE020A002EEEED /* Frameworks */,
+				EC84938F1DCE020A002EEEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuotaiOS;
+			productName = QuotaiOS;
+			productReference = EC8493911DCE020A002EEEED /* QuotaiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC8493A41DCE020A002EEEED /* QuotaiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8493BC1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSTests" */;
+			buildPhases = (
+				EC8493A11DCE020A002EEEED /* Sources */,
+				EC8493A21DCE020A002EEEED /* Frameworks */,
+				EC8493A31DCE020A002EEEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC8493A71DCE020A002EEEED /* PBXTargetDependency */,
+			);
+			name = QuotaiOSTests;
+			productName = QuotaiOSTests;
+			productReference = EC8493A51DCE020A002EEEED /* QuotaiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC8493AF1DCE020A002EEEED /* QuotaiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8493BF1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSUITests" */;
+			buildPhases = (
+				EC8493AC1DCE020A002EEEED /* Sources */,
+				EC8493AD1DCE020A002EEEED /* Frameworks */,
+				EC8493AE1DCE020A002EEEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC8493B21DCE020A002EEEED /* PBXTargetDependency */,
+			);
+			name = QuotaiOSUITests;
+			productName = QuotaiOSUITests;
+			productReference = EC8493B01DCE020A002EEEED /* QuotaiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8493891DCE020A002EEEED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Matthew Muccio";
+				TargetAttributes = {
+					EC8493901DCE020A002EEEED = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HT6AJ9794M;
+						ProvisioningStyle = Automatic;
+					};
+					EC8493A41DCE020A002EEEED = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HT6AJ9794M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC8493901DCE020A002EEEED;
+					};
+					EC8493AF1DCE020A002EEEED = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HT6AJ9794M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC8493901DCE020A002EEEED;
+					};
+				};
+			};
+			buildConfigurationList = EC84938C1DCE020A002EEEED /* Build configuration list for PBXProject "QuotaiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC8493881DCE020A002EEEED;
+			productRefGroup = EC8493921DCE020A002EEEED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8493901DCE020A002EEEED /* QuotaiOS */,
+				EC8493A41DCE020A002EEEED /* QuotaiOSTests */,
+				EC8493AF1DCE020A002EEEED /* QuotaiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC84938F1DCE020A002EEEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC84939F1DCE020A002EEEED /* LaunchScreen.storyboard in Resources */,
+				EC84939C1DCE020A002EEEED /* Assets.xcassets in Resources */,
+				EC84939A1DCE020A002EEEED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8493A31DCE020A002EEEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8493AE1DCE020A002EEEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC84938D1DCE020A002EEEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8493971DCE020A002EEEED /* ViewController.swift in Sources */,
+				EC8493951DCE020A002EEEED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8493A11DCE020A002EEEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8493AA1DCE020A002EEEED /* QuotaiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8493AC1DCE020A002EEEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8493B51DCE020A002EEEED /* QuotaiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC8493A71DCE020A002EEEED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC8493901DCE020A002EEEED /* QuotaiOS */;
+			targetProxy = EC8493A61DCE020A002EEEED /* PBXContainerItemProxy */;
+		};
+		EC8493B21DCE020A002EEEED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC8493901DCE020A002EEEED /* QuotaiOS */;
+			targetProxy = EC8493B11DCE020A002EEEED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC8493981DCE020A002EEEED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8493991DCE020A002EEEED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC84939D1DCE020A002EEEED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC84939E1DCE020A002EEEED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC8493B71DCE020A002EEEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC8493B81DCE020A002EEEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC8493BA1DCE020A002EEEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HT6AJ9794M;
+				INFOPLIST_FILE = QuotaiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC8493BB1DCE020A002EEEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HT6AJ9794M;
+				INFOPLIST_FILE = QuotaiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC8493BD1DCE020A002EEEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HT6AJ9794M;
+				INFOPLIST_FILE = QuotaiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuotaiOS.app/QuotaiOS";
+			};
+			name = Debug;
+		};
+		EC8493BE1DCE020A002EEEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HT6AJ9794M;
+				INFOPLIST_FILE = QuotaiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuotaiOS.app/QuotaiOS";
+			};
+			name = Release;
+		};
+		EC8493C01DCE020A002EEEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HT6AJ9794M;
+				INFOPLIST_FILE = QuotaiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuotaiOS;
+			};
+			name = Debug;
+		};
+		EC8493C11DCE020A002EEEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HT6AJ9794M;
+				INFOPLIST_FILE = QuotaiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuotaiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC84938C1DCE020A002EEEED /* Build configuration list for PBXProject "QuotaiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8493B71DCE020A002EEEED /* Debug */,
+				EC8493B81DCE020A002EEEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8493B91DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8493BA1DCE020A002EEEED /* Debug */,
+				EC8493BB1DCE020A002EEEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC8493BC1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8493BD1DCE020A002EEEED /* Debug */,
+				EC8493BE1DCE020A002EEEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC8493BF1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8493C01DCE020A002EEEED /* Debug */,
+				EC8493C11DCE020A002EEEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC8493891DCE020A002EEEED /* Project object */;
+}
