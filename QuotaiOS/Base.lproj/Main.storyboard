@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cT3-BO-Ghk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5or-0T-6pZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Task List-->
         <scene sceneID="aJV-qY-2l7">
             <objects>
-                <viewController title="Task List" id="WuX-VO-ndX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="list" title="Task List" id="WuX-VO-ndX" customClass="TaskListViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bM7-9j-r9u"/>
                         <viewControllerLayoutGuide type="bottom" id="3c1-90-kH9"/>
@@ -20,17 +20,32 @@
                     <view key="view" contentMode="scaleToFill" id="t5x-am-8D5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3T3-4P-3ND">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WuX-VO-ndX" id="dc3-sH-IFa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3T3-4P-3ND" firstAttribute="bottom" secondItem="3c1-90-kH9" secondAttribute="top" id="6nq-jA-CeN"/>
+                            <constraint firstItem="3T3-4P-3ND" firstAttribute="top" secondItem="t5x-am-8D5" secondAttribute="top" id="Kce-dS-0c5"/>
+                            <constraint firstItem="3T3-4P-3ND" firstAttribute="leading" secondItem="t5x-am-8D5" secondAttribute="leading" id="uM1-lI-CSo"/>
+                            <constraint firstAttribute="trailing" secondItem="3T3-4P-3ND" secondAttribute="trailing" id="z1r-lB-4KG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-Qh-TX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="38"/>
+            <point key="canvasLocation" x="864.79999999999995" y="35.532233883058474"/>
         </scene>
         <!--Quota-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Quota" id="BYZ-38-t0r" customClass="ViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quota" title="Quota" id="BYZ-38-t0r" customClass="ViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -52,7 +67,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" backgroundImage="navListButtonImage"/>
                                 <connections>
-                                    <segue destination="WuX-VO-ndX" kind="show" id="qVQ-Yz-l3o"/>
+                                    <segue destination="WuX-VO-ndX" kind="show" id="x3L-kM-nCv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrb-wr-mBA">
@@ -60,7 +75,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="navPlusButtonImage"/>
                                 <connections>
-                                    <segue destination="f5a-vZ-Ev1" kind="show" id="ODh-2W-ler"/>
+                                    <segue destination="f5a-vZ-Ev1" kind="show" id="SX9-7d-CBK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlX-uR-Pxb">
@@ -113,12 +128,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917.60000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1805.5999999999999" y="35.532233883058474"/>
         </scene>
         <!--Add-->
         <scene sceneID="q83-BJ-Rex">
             <objects>
-                <viewController title="Add" id="f5a-vZ-Ev1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="add" title="Add" id="f5a-vZ-Ev1" customClass="AddTaskViewController" customModule="QuotaiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rx4-pM-o8i"/>
                         <viewControllerLayoutGuide type="bottom" id="cBr-gI-lcX"/>
@@ -356,25 +371,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhg-Qc-50E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="35.532233883058474"/>
+            <point key="canvasLocation" x="2612" y="35.532233883058474"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="yg1-iN-ZZf">
+        <scene sceneID="aEJ-qI-okl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cT3-BO-Ghk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="5or-0T-6pZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TxY-3a-Db5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ewi-hc-KUd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i5D-vo-m40"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JwZ-iC-zII"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wKq-kF-5el" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cx2-GC-y6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="-644.52773613193403"/>
+            <point key="canvasLocation" x="1806" y="-741"/>
         </scene>
     </scenes>
     <resources>
