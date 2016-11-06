@@ -16,15 +16,14 @@ struct Task
     var priority = "Priority";
     var dueDate = "Due Date";
     var dueTime = "Due Time";
-    var category = "Category";
 }
 
 class TaskManager: NSObject
 {
     var taskList = [Task]();
     
-    func addTask(name: String, priority: String, dueDate: String, dueTime: String, category: String)
+    func addTask(name: String, priority: String, dueDate: String, dueTime: String)
     {
-        taskList.append(Task(name: name, priority: priority, dueDate: dueDate, dueTime: dueTime, category: category));
+        taskList.append(Task(name: name, priority: priority, dueDate: dueDate, dueTime: dueTime));
     }
 }

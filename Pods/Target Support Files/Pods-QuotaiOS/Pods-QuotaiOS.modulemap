@@ -1,0 +1,6 @@
+framework module Pods_QuotaiOS {
+  umbrella header "Pods-QuotaiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

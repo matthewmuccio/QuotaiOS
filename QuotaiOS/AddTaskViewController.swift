@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class AddTaskViewController: UIViewController, UITextViewDelegate
 {
@@ -18,9 +19,7 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
     @IBOutlet weak var highPriorityButton: UIButton!;
     @IBOutlet weak var dateLabel: UILabel!;
     @IBOutlet weak var timeLabel: UILabel!;
-    @IBOutlet weak var changeDateButton: UIButton!;
-    @IBOutlet weak var changeTimeButton: UIButton!;
-    @IBOutlet weak var categoryTextView: UITextView!;
+    @IBOutlet weak var datePicker: UIDatePicker!;
     
     var low:Bool = false;
     var medium:Bool = false;
@@ -54,8 +53,8 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
     {
         if (self.taskTextView.text.isEmpty ||
             (!low && !medium && !high) ||
-            self.dateLabel.text == "not" ||
-            self.timeLabel.text == "not")
+            self.dateLabel.text == "Not set" ||
+            self.timeLabel.text == "Not set")
         {
             return false;
         }
@@ -66,16 +65,17 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
     func textViewDidBeginEditing(_ textView: UITextView)
     {
         // Check to see if button should be enabled.
-        checkForButton();
+        self.checkForButton();
     }
     
     // When a textView changes when is inside it.
     func textViewDidChange(_ textView: UITextView)
     {
         // Check to see if button should be enabled.
-        checkForButton();
+        self.checkForButton();
     }
     
+    // When user clicks the "Low" priority button.
     @IBAction func lowPriorityButtonPressed(_ sender: Any)
     {
         // Dismiss keyboard.
@@ -92,9 +92,10 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         self.highPriorityButton.backgroundColor = UIColor.darkGray;
         
         // Check to see if button should be enabled.
-        checkForButton();
+        self.checkForButton();
     }
     
+    // When user clicks the "Medium" priority button.
     @IBAction func mediumPriorityButtonPressed(_ sender: Any)
     {
         // Dismiss keyboard.
@@ -111,9 +112,10 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         self.highPriorityButton.backgroundColor = UIColor.darkGray;
         
         // Check to see if button should be enabled.
-        checkForButton();
+        self.checkForButton();
     }
     
+    // When user clicks the "High" priority button.
     @IBAction func highPriorityButtonPressed(_ sender: Any)
     {
         // Dismiss keyboard.
@@ -130,19 +132,20 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         self.highPriorityButton.backgroundColor = UIColor.red;
         
         // Check to see if button should be enabled.
-        checkForButton();
+        self.checkForButton();
     }
     
-    // When user presses "Change Date" button.
-    @IBAction func changeDateButtonPressed(_ sender: Any)
+    @IBAction func datePickerValueChanged(_ sender: Any)
     {
+        let formatter = DateFormatter();
+        formatter.dateFormat = "MM/dd/YYYY";
+        dateLabel.text = formatter.string(from: datePicker.date);
         
-    }
-    
-    // When user presses "Change Time" button.
-    @IBAction func changeTimeButtonPressed(_ sender: Any)
-    {
+        formatter.dateFormat = "hh:mm a";
+        timeLabel.text = formatter.string(from: datePicker.date);
         
+        // Check to see if button should be enabled.
+        self.checkForButton();
     }
     
     // When user presses "Add Task" button.
@@ -151,7 +154,6 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         // Resign textViews from being a first responder.
         // (Remove keyboard from screen.)
         taskTextView.resignFirstResponder();
-        categoryTextView.resignFirstResponder();
         
         var priority:String = "";
         
@@ -170,14 +172,14 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         }
         
         // Add task.
-        taskManager.addTask(name: taskTextView.text, priority: priority, dueDate: dateLabel.text!, dueTime: timeLabel.text!, category: categoryTextView.text);
+        taskManager.addTask(name: taskTextView.text, priority: priority, dueDate: dateLabel.text!, dueTime: timeLabel.text!);
         
         // Dismiss keyboard and pop user back to main scene.
         self.view.endEditing(true);
         _ = self.navigationController?.popViewController(animated: true);
     }
     
-    //
+    // When user touches something on screen.
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         // Dismiss keyboard.

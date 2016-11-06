@@ -1,0 +1,6 @@
+framework module Pods_QuotaiOSTests {
+  umbrella header "Pods-QuotaiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

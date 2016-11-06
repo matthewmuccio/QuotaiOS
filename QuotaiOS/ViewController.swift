@@ -19,6 +19,11 @@ class ViewController: UIViewController
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController?.navigationBar.barStyle = UIBarStyle.black;
     }
+    
+    func qScore() -> Int
+    {
+        return 0;
+    }
 
     override func didReceiveMemoryWarning()
     {

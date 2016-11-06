@@ -18,7 +18,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         tasksTableView.reloadData();
     }
     
-    // Returns number of sections (categories) in UITableView.
+    // Returns number of sections in UITableView.
     func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1;
@@ -35,7 +35,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     {
         let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Default Tasks");
         
-        cell.textLabel?.text = taskManager.taskList[indexPath.row].name;
+        cell.textLabel?.text = taskManager.taskList[indexPath.row].name + " [\(taskManager.taskList[indexPath.row].priority) priority]";
         cell.detailTextLabel?.text = taskManager.taskList[indexPath.row].dueDate + " @ " + taskManager.taskList[indexPath.row].dueTime;
         
         return cell;

@@ -1,547 +1,1568 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		EC8493951DCE020A002EEEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493941DCE020A002EEEED /* AppDelegate.swift */; };
-		EC8493971DCE020A002EEEED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493961DCE020A002EEEED /* ViewController.swift */; };
-		EC84939A1DCE020A002EEEED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8493981DCE020A002EEEED /* Main.storyboard */; };
-		EC84939C1DCE020A002EEEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC84939B1DCE020A002EEEED /* Assets.xcassets */; };
-		EC84939F1DCE020A002EEEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC84939D1DCE020A002EEEED /* LaunchScreen.storyboard */; };
-		EC8493AA1DCE020A002EEEED /* QuotaiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493A91DCE020A002EEEED /* QuotaiOSTests.swift */; };
-		EC8493B51DCE020A002EEEED /* QuotaiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493B41DCE020A002EEEED /* QuotaiOSUITests.swift */; };
-		EC8493C31DCE08A4002EEEED /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493C21DCE08A4002EEEED /* AddTaskViewController.swift */; };
-		EC8493C51DCE258E002EEEED /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493C41DCE258E002EEEED /* TaskListViewController.swift */; };
-		EC8493C71DCE2D54002EEEED /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8493C61DCE2D54002EEEED /* TaskManager.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EC8493A61DCE020A002EEEED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC8493891DCE020A002EEEED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC8493901DCE020A002EEEED;
-			remoteInfo = QuotaiOS;
-		};
-		EC8493B11DCE020A002EEEED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC8493891DCE020A002EEEED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC8493901DCE020A002EEEED;
-			remoteInfo = QuotaiOS;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		EC8493911DCE020A002EEEED /* QuotaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC8493941DCE020A002EEEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC8493961DCE020A002EEEED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC8493991DCE020A002EEEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC84939B1DCE020A002EEEED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC84939E1DCE020A002EEEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EC8493A01DCE020A002EEEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC8493A51DCE020A002EEEED /* QuotaiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotaiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC8493A91DCE020A002EEEED /* QuotaiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaiOSTests.swift; sourceTree = "<group>"; };
-		EC8493AB1DCE020A002EEEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC8493B01DCE020A002EEEED /* QuotaiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotaiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC8493B41DCE020A002EEEED /* QuotaiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaiOSUITests.swift; sourceTree = "<group>"; };
-		EC8493B61DCE020A002EEEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC8493C21DCE08A4002EEEED /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
-		EC8493C41DCE258E002EEEED /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
-		EC8493C61DCE2D54002EEEED /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		EC84938E1DCE020A002EEEED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC8493A21DCE020A002EEEED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC8493AD1DCE020A002EEEED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		EC8493881DCE020A002EEEED = {
-			isa = PBXGroup;
-			children = (
-				EC8493931DCE020A002EEEED /* QuotaiOS */,
-				EC8493A81DCE020A002EEEED /* QuotaiOSTests */,
-				EC8493B31DCE020A002EEEED /* QuotaiOSUITests */,
-				EC8493921DCE020A002EEEED /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		EC8493921DCE020A002EEEED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EC8493911DCE020A002EEEED /* QuotaiOS.app */,
-				EC8493A51DCE020A002EEEED /* QuotaiOSTests.xctest */,
-				EC8493B01DCE020A002EEEED /* QuotaiOSUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EC8493931DCE020A002EEEED /* QuotaiOS */ = {
-			isa = PBXGroup;
-			children = (
-				EC8493941DCE020A002EEEED /* AppDelegate.swift */,
-				EC8493961DCE020A002EEEED /* ViewController.swift */,
-				EC8493C21DCE08A4002EEEED /* AddTaskViewController.swift */,
-				EC8493C61DCE2D54002EEEED /* TaskManager.swift */,
-				EC8493C41DCE258E002EEEED /* TaskListViewController.swift */,
-				EC8493981DCE020A002EEEED /* Main.storyboard */,
-				EC84939B1DCE020A002EEEED /* Assets.xcassets */,
-				EC84939D1DCE020A002EEEED /* LaunchScreen.storyboard */,
-				EC8493A01DCE020A002EEEED /* Info.plist */,
-			);
-			path = QuotaiOS;
-			sourceTree = "<group>";
-		};
-		EC8493A81DCE020A002EEEED /* QuotaiOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC8493A91DCE020A002EEEED /* QuotaiOSTests.swift */,
-				EC8493AB1DCE020A002EEEED /* Info.plist */,
-			);
-			path = QuotaiOSTests;
-			sourceTree = "<group>";
-		};
-		EC8493B31DCE020A002EEEED /* QuotaiOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EC8493B41DCE020A002EEEED /* QuotaiOSUITests.swift */,
-				EC8493B61DCE020A002EEEED /* Info.plist */,
-			);
-			path = QuotaiOSUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		EC8493901DCE020A002EEEED /* QuotaiOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC8493B91DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOS" */;
-			buildPhases = (
-				EC84938D1DCE020A002EEEED /* Sources */,
-				EC84938E1DCE020A002EEEED /* Frameworks */,
-				EC84938F1DCE020A002EEEED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = QuotaiOS;
-			productName = QuotaiOS;
-			productReference = EC8493911DCE020A002EEEED /* QuotaiOS.app */;
-			productType = "com.apple.product-type.application";
-		};
-		EC8493A41DCE020A002EEEED /* QuotaiOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC8493BC1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSTests" */;
-			buildPhases = (
-				EC8493A11DCE020A002EEEED /* Sources */,
-				EC8493A21DCE020A002EEEED /* Frameworks */,
-				EC8493A31DCE020A002EEEED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC8493A71DCE020A002EEEED /* PBXTargetDependency */,
-			);
-			name = QuotaiOSTests;
-			productName = QuotaiOSTests;
-			productReference = EC8493A51DCE020A002EEEED /* QuotaiOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EC8493AF1DCE020A002EEEED /* QuotaiOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC8493BF1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSUITests" */;
-			buildPhases = (
-				EC8493AC1DCE020A002EEEED /* Sources */,
-				EC8493AD1DCE020A002EEEED /* Frameworks */,
-				EC8493AE1DCE020A002EEEED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC8493B21DCE020A002EEEED /* PBXTargetDependency */,
-			);
-			name = QuotaiOSUITests;
-			productName = QuotaiOSUITests;
-			productReference = EC8493B01DCE020A002EEEED /* QuotaiOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		EC8493891DCE020A002EEEED /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Matthew Muccio";
-				TargetAttributes = {
-					EC8493901DCE020A002EEEED = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = HT6AJ9794M;
-						ProvisioningStyle = Automatic;
-					};
-					EC8493A41DCE020A002EEEED = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = HT6AJ9794M;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC8493901DCE020A002EEEED;
-					};
-					EC8493AF1DCE020A002EEEED = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = HT6AJ9794M;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC8493901DCE020A002EEEED;
-					};
-				};
-			};
-			buildConfigurationList = EC84938C1DCE020A002EEEED /* Build configuration list for PBXProject "QuotaiOS" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = EC8493881DCE020A002EEEED;
-			productRefGroup = EC8493921DCE020A002EEEED /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				EC8493901DCE020A002EEEED /* QuotaiOS */,
-				EC8493A41DCE020A002EEEED /* QuotaiOSTests */,
-				EC8493AF1DCE020A002EEEED /* QuotaiOSUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		EC84938F1DCE020A002EEEED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC84939F1DCE020A002EEEED /* LaunchScreen.storyboard in Resources */,
-				EC84939C1DCE020A002EEEED /* Assets.xcassets in Resources */,
-				EC84939A1DCE020A002EEEED /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC8493A31DCE020A002EEEED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC8493AE1DCE020A002EEEED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		EC84938D1DCE020A002EEEED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC8493971DCE020A002EEEED /* ViewController.swift in Sources */,
-				EC8493C51DCE258E002EEEED /* TaskListViewController.swift in Sources */,
-				EC8493C71DCE2D54002EEEED /* TaskManager.swift in Sources */,
-				EC8493C31DCE08A4002EEEED /* AddTaskViewController.swift in Sources */,
-				EC8493951DCE020A002EEEED /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC8493A11DCE020A002EEEED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC8493AA1DCE020A002EEEED /* QuotaiOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC8493AC1DCE020A002EEEED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC8493B51DCE020A002EEEED /* QuotaiOSUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EC8493A71DCE020A002EEEED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC8493901DCE020A002EEEED /* QuotaiOS */;
-			targetProxy = EC8493A61DCE020A002EEEED /* PBXContainerItemProxy */;
-		};
-		EC8493B21DCE020A002EEEED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC8493901DCE020A002EEEED /* QuotaiOS */;
-			targetProxy = EC8493B11DCE020A002EEEED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EC8493981DCE020A002EEEED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC8493991DCE020A002EEEED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC84939D1DCE020A002EEEED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC84939E1DCE020A002EEEED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		EC8493B71DCE020A002EEEED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		EC8493B81DCE020A002EEEED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EC8493BA1DCE020A002EEEED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HT6AJ9794M;
-				INFOPLIST_FILE = QuotaiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		EC8493BB1DCE020A002EEEED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HT6AJ9794M;
-				INFOPLIST_FILE = QuotaiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		EC8493BD1DCE020A002EEEED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HT6AJ9794M;
-				INFOPLIST_FILE = QuotaiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuotaiOS.app/QuotaiOS";
-			};
-			name = Debug;
-		};
-		EC8493BE1DCE020A002EEEED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HT6AJ9794M;
-				INFOPLIST_FILE = QuotaiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuotaiOS.app/QuotaiOS";
-			};
-			name = Release;
-		};
-		EC8493C01DCE020A002EEEED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = HT6AJ9794M;
-				INFOPLIST_FILE = QuotaiOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = QuotaiOS;
-			};
-			name = Debug;
-		};
-		EC8493C11DCE020A002EEEED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = HT6AJ9794M;
-				INFOPLIST_FILE = QuotaiOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quotaapp.QuotaiOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = QuotaiOS;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		EC84938C1DCE020A002EEEED /* Build configuration list for PBXProject "QuotaiOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC8493B71DCE020A002EEEED /* Debug */,
-				EC8493B81DCE020A002EEEED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC8493B91DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC8493BA1DCE020A002EEEED /* Debug */,
-				EC8493BB1DCE020A002EEEED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		EC8493BC1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC8493BD1DCE020A002EEEED /* Debug */,
-				EC8493BE1DCE020A002EEEED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		EC8493BF1DCE020A002EEEED /* Build configuration list for PBXNativeTarget "QuotaiOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC8493C01DCE020A002EEEED /* Debug */,
-				EC8493C11DCE020A002EEEED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = EC8493891DCE020A002EEEED /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>038409F092F55F3BF2F5739A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-QuotaiOS/Pods-QuotaiOS-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>16FBD811025657B9253DCEA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3CB4383C03BB71E087B349C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2A3F0FB4E1D3E1B571F020E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-QuotaiOSUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-QuotaiOSUITests/Pods-QuotaiOSUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>304ADD1CFDA7E45F3BE04573</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D56070D9ACD3F88393C7B5E4</string>
+				<string>D5F1EA44A32BB0EF3DEB6248</string>
+				<string>8729118AB7B36C338A04666C</string>
+				<string>80F43E18AF6B4341A1103CA3</string>
+				<string>8DA0C788C0F6E93EA5591B30</string>
+				<string>2A3F0FB4E1D3E1B571F020E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4851DBC5C4F15E006AF39683</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-QuotaiOS/Pods-QuotaiOS-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>518EAD2CAF9F80DDD034FEFA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-QuotaiOSTests/Pods-QuotaiOSTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>53C313C1010CD0D1B35576FE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-QuotaiOSTests/Pods-QuotaiOSTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>63938DE7723D41A0435E06CC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>80F43E18AF6B4341A1103CA3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-QuotaiOSTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-QuotaiOSTests/Pods-QuotaiOSTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8729118AB7B36C338A04666C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-QuotaiOSTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-QuotaiOSTests/Pods-QuotaiOSTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BC23D3E5BB19459D764BD7A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8DA0C788C0F6E93EA5591B30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-QuotaiOSUITests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-QuotaiOSUITests/Pods-QuotaiOSUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE00A4DFFA7C72E14F56976F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_QuotaiOSUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C3CB4383C03BB71E087B349C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_QuotaiOS.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CAE3E31DABCDBCF39C44DB67</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3CB4383C03BB71E087B349C</string>
+				<string>F411C8879BC7A22A93438F67</string>
+				<string>AE00A4DFFA7C72E14F56976F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCDC4139CEDB6987DB76979F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-QuotaiOSUITests/Pods-QuotaiOSUITests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D56070D9ACD3F88393C7B5E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-QuotaiOS.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-QuotaiOS/Pods-QuotaiOS.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D59CAC77904DC8CBE0CA3448</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D5F1EA44A32BB0EF3DEB6248</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-QuotaiOS.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-QuotaiOS/Pods-QuotaiOS.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E17B3194FB12F7DE0CCC5E4B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F411C8879BC7A22A93438F67</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493881DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC8493931DCE020A002EEEED</string>
+				<string>EC8493A81DCE020A002EEEED</string>
+				<string>EC8493B31DCE020A002EEEED</string>
+				<string>EC8493921DCE020A002EEEED</string>
+				<string>304ADD1CFDA7E45F3BE04573</string>
+				<string>CAE3E31DABCDBCF39C44DB67</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493891DCE020A002EEEED</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0810</string>
+				<key>LastUpgradeCheck</key>
+				<string>0810</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Matthew Muccio</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>EC8493901DCE020A002EEEED</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>HT6AJ9794M</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>EC8493A41DCE020A002EEEED</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>HT6AJ9794M</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>EC8493901DCE020A002EEEED</string>
+					</dict>
+					<key>EC8493AF1DCE020A002EEEED</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>HT6AJ9794M</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>EC8493901DCE020A002EEEED</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>EC84938C1DCE020A002EEEED</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>EC8493881DCE020A002EEEED</string>
+			<key>productRefGroup</key>
+			<string>EC8493921DCE020A002EEEED</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>EC8493901DCE020A002EEEED</string>
+				<string>EC8493A41DCE020A002EEEED</string>
+				<string>EC8493AF1DCE020A002EEEED</string>
+			</array>
+		</dict>
+		<key>EC84938C1DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EC8493B71DCE020A002EEEED</string>
+				<string>EC8493B81DCE020A002EEEED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EC84938D1DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EC8493971DCE020A002EEEED</string>
+				<string>EC8493C51DCE258E002EEEED</string>
+				<string>EC8493C91DCE8CF4002EEEED</string>
+				<string>EC8493C71DCE2D54002EEEED</string>
+				<string>EC8493C31DCE08A4002EEEED</string>
+				<string>EC8493CB1DCEABF6002EEEED</string>
+				<string>EC8493951DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC84938E1DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>16FBD811025657B9253DCEA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC84938F1DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EC84939F1DCE020A002EEEED</string>
+				<string>EC8493CD1DCEAFC2002EEEED</string>
+				<string>EC84939C1DCE020A002EEEED</string>
+				<string>EC84939A1DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493901DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>EC8493B91DCE020A002EEEED</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D59CAC77904DC8CBE0CA3448</string>
+				<string>EC84938D1DCE020A002EEEED</string>
+				<string>EC84938E1DCE020A002EEEED</string>
+				<string>EC84938F1DCE020A002EEEED</string>
+				<string>4851DBC5C4F15E006AF39683</string>
+				<string>038409F092F55F3BF2F5739A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>QuotaiOS</string>
+			<key>productName</key>
+			<string>QuotaiOS</string>
+			<key>productReference</key>
+			<string>EC8493911DCE020A002EEEED</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>EC8493911DCE020A002EEEED</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>QuotaiOS.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EC8493921DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC8493911DCE020A002EEEED</string>
+				<string>EC8493A51DCE020A002EEEED</string>
+				<string>EC8493B01DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493931DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC8493941DCE020A002EEEED</string>
+				<string>EC8493961DCE020A002EEEED</string>
+				<string>EC8493CA1DCEABF6002EEEED</string>
+				<string>EC8493C21DCE08A4002EEEED</string>
+				<string>EC8493C61DCE2D54002EEEED</string>
+				<string>EC8493C41DCE258E002EEEED</string>
+				<string>EC8493C81DCE8CF4002EEEED</string>
+				<string>EC8493981DCE020A002EEEED</string>
+				<string>EC84939B1DCE020A002EEEED</string>
+				<string>EC84939D1DCE020A002EEEED</string>
+				<string>EC8493A01DCE020A002EEEED</string>
+				<string>EC8493CC1DCEAFC2002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>QuotaiOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493941DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493951DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493941DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493961DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493971DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493961DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493981DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC8493991DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493991DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC84939A1DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493981DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC84939B1DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC84939C1DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC84939B1DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC84939D1DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC84939E1DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC84939E1DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC84939F1DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC84939D1DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493A01DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493A11DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EC8493AA1DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493A21DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E17B3194FB12F7DE0CCC5E4B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493A31DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493A41DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>EC8493BC1DCE020A002EEEED</string>
+			<key>buildPhases</key>
+			<array>
+				<string>63938DE7723D41A0435E06CC</string>
+				<string>EC8493A11DCE020A002EEEED</string>
+				<string>EC8493A21DCE020A002EEEED</string>
+				<string>EC8493A31DCE020A002EEEED</string>
+				<string>53C313C1010CD0D1B35576FE</string>
+				<string>518EAD2CAF9F80DDD034FEFA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>EC8493A71DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>QuotaiOSTests</string>
+			<key>productName</key>
+			<string>QuotaiOSTests</string>
+			<key>productReference</key>
+			<string>EC8493A51DCE020A002EEEED</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>EC8493A51DCE020A002EEEED</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>QuotaiOSTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EC8493A61DCE020A002EEEED</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>EC8493891DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>EC8493901DCE020A002EEEED</string>
+			<key>remoteInfo</key>
+			<string>QuotaiOS</string>
+		</dict>
+		<key>EC8493A71DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>EC8493901DCE020A002EEEED</string>
+			<key>targetProxy</key>
+			<string>EC8493A61DCE020A002EEEED</string>
+		</dict>
+		<key>EC8493A81DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC8493A91DCE020A002EEEED</string>
+				<string>EC8493AB1DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>QuotaiOSTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493A91DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>QuotaiOSTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493AA1DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493A91DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493AB1DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493AC1DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EC8493B51DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493AD1DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F57FBB64CEF0211D39D64B04</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493AE1DCE020A002EEEED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EC8493AF1DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>EC8493BF1DCE020A002EEEED</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8BC23D3E5BB19459D764BD7A</string>
+				<string>EC8493AC1DCE020A002EEEED</string>
+				<string>EC8493AD1DCE020A002EEEED</string>
+				<string>EC8493AE1DCE020A002EEEED</string>
+				<string>CCDC4139CEDB6987DB76979F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>EC8493B21DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>QuotaiOSUITests</string>
+			<key>productName</key>
+			<string>QuotaiOSUITests</string>
+			<key>productReference</key>
+			<string>EC8493B01DCE020A002EEEED</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>EC8493B01DCE020A002EEEED</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>QuotaiOSUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EC8493B11DCE020A002EEEED</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>EC8493891DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>EC8493901DCE020A002EEEED</string>
+			<key>remoteInfo</key>
+			<string>QuotaiOS</string>
+		</dict>
+		<key>EC8493B21DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>EC8493901DCE020A002EEEED</string>
+			<key>targetProxy</key>
+			<string>EC8493B11DCE020A002EEEED</string>
+		</dict>
+		<key>EC8493B31DCE020A002EEEED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC8493B41DCE020A002EEEED</string>
+				<string>EC8493B61DCE020A002EEEED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>QuotaiOSUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493B41DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>QuotaiOSUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493B51DCE020A002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493B41DCE020A002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493B61DCE020A002EEEED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493B71DCE020A002EEEED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+				<string>DEBUG</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EC8493B81DCE020A002EEEED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>EC8493B91DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EC8493BA1DCE020A002EEEED</string>
+				<string>EC8493BB1DCE020A002EEEED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EC8493BA1DCE020A002EEEED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D56070D9ACD3F88393C7B5E4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>HT6AJ9794M</string>
+				<key>INFOPLIST_FILE</key>
+				<string>QuotaiOS/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.quotaapp.QuotaiOS</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EC8493BB1DCE020A002EEEED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D5F1EA44A32BB0EF3DEB6248</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>HT6AJ9794M</string>
+				<key>INFOPLIST_FILE</key>
+				<string>QuotaiOS/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.quotaapp.QuotaiOS</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>EC8493BC1DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EC8493BD1DCE020A002EEEED</string>
+				<string>EC8493BE1DCE020A002EEEED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EC8493BD1DCE020A002EEEED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8729118AB7B36C338A04666C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>HT6AJ9794M</string>
+				<key>INFOPLIST_FILE</key>
+				<string>QuotaiOSTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.quotaapp.QuotaiOSTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/QuotaiOS.app/QuotaiOS</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EC8493BE1DCE020A002EEEED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>80F43E18AF6B4341A1103CA3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>HT6AJ9794M</string>
+				<key>INFOPLIST_FILE</key>
+				<string>QuotaiOSTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.quotaapp.QuotaiOSTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/QuotaiOS.app/QuotaiOS</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>EC8493BF1DCE020A002EEEED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EC8493C01DCE020A002EEEED</string>
+				<string>EC8493C11DCE020A002EEEED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EC8493C01DCE020A002EEEED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8DA0C788C0F6E93EA5591B30</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>HT6AJ9794M</string>
+				<key>INFOPLIST_FILE</key>
+				<string>QuotaiOSUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.quotaapp.QuotaiOSUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>QuotaiOS</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EC8493C11DCE020A002EEEED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2A3F0FB4E1D3E1B571F020E3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>HT6AJ9794M</string>
+				<key>INFOPLIST_FILE</key>
+				<string>QuotaiOSUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.quotaapp.QuotaiOSUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>QuotaiOS</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>EC8493C21DCE08A4002EEEED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AddTaskViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493C31DCE08A4002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493C21DCE08A4002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493C41DCE258E002EEEED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TaskListViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493C51DCE258E002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493C41DCE258E002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493C61DCE2D54002EEEED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TaskManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493C71DCE2D54002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493C61DCE2D54002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493C81DCE8CF4002EEEED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TaskGroup.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493C91DCE8CF4002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493C81DCE8CF4002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493CA1DCEABF6002EEEED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EditTaskViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493CB1DCEABF6002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493CA1DCEABF6002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC8493CC1DCEAFC2002EEEED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GoogleService-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC8493CD1DCEAFC2002EEEED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8493CC1DCEAFC2002EEEED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F411C8879BC7A22A93438F67</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_QuotaiOSTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F57FBB64CEF0211D39D64B04</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AE00A4DFFA7C72E14F56976F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>EC8493891DCE020A002EEEED</string>
+</dict>
+</plist>
