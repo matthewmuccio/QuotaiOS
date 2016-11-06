@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController
 {
@@ -21,6 +22,15 @@ class ViewController: UIViewController
     @IBOutlet weak var signedInLabel: UILabel!;
     @IBOutlet weak var emailLabel: UILabel!;
     @IBOutlet weak var signOutButton: UIButton!;
+    @IBOutlet weak var helloLabel: UILabel!;
+    @IBOutlet weak var infoLabel: UILabel!;
+    
+    var qScore:Int = 0;
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        qScore = getQScore();
+    }
     
     override func viewDidLoad()
     {
@@ -28,9 +38,37 @@ class ViewController: UIViewController
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController?.navigationBar.barStyle = UIBarStyle.black;
         
+        qScore = getQScore();
+        
         self.reference = FIRDatabase.database().reference();
+        
+        // If user was not signed in beforehand.
+        if (FIRAuth.auth()?.currentUser == nil)
+        {
+            
+        }
+        else
+        {
+            let alert = UIAlertController(title: "You are already logged in!", message: "The last time you were here you were signed on so we kept your session. No need to thank us, just pay it forward.", preferredStyle: UIAlertControllerStyle.alert);
+            let OK = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil);
+            alert.addAction(OK);
+            self.present(alert, animated: true, completion: nil);
+            
+            self.emailTextField.isHidden = true;
+            self.passwordTextField.isHidden = true;
+            self.loginButton.isHidden = true;
+            self.registerAccountButton.isHidden = true;
+            
+            self.emailLabel.text = FIRAuth.auth()?.currentUser?.uid;
+            self.signedInLabel.isHidden = false;
+            self.emailLabel.isHidden = false;
+            self.signOutButton.isHidden = false;
+            self.helloLabel.isHidden = false;
+            self.infoLabel.isHidden = false;
+        }
     }
     
+    // Attempts to sign user out of Firebase account.
     @IBAction func signOutButtonPressed(_ sender: Any)
     {
         try! FIRAuth.auth()?.signOut();
@@ -50,8 +88,11 @@ class ViewController: UIViewController
         self.signedInLabel.isHidden = true;
         self.emailLabel.isHidden = true;
         self.signOutButton.isHidden = true;
+        self.helloLabel.isHidden = true;
+        self.infoLabel.isHidden = true;
     }
     
+    // When user presses loginButton to  attempt to log in.
     @IBAction func loginButtonPressed(_ sender: Any)
     {
         FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {
@@ -80,10 +121,13 @@ class ViewController: UIViewController
             self.loginButton.isHidden = true;
             self.registerAccountButton.isHidden = true;
             
-            self.emailLabel.text = self.emailTextField.text;
+            self.emailLabel.text = FIRAuth.auth()?.currentUser?.uid;
             self.signedInLabel.isHidden = false;
             self.emailLabel.isHidden = false;
             self.signOutButton.isHidden = false;
+            
+            self.helloLabel.isHidden = false;
+            self.infoLabel.isHidden = false;
             
             self.emailTextField.text = "";
             self.passwordTextField.text = "";
@@ -122,9 +166,10 @@ class ViewController: UIViewController
         })
     }
     
-    func qScore() -> Int
+    func getQScore() -> Int
     {
-        return 0;
+        qScore = taskManager.taskList.count;
+        return qScore;
     }
     
     // When user touches something on screen.

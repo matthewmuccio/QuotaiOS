@@ -8,9 +8,12 @@
 
 import UIKit
 import Foundation
+import Firebase
 
 class AddTaskViewController: UIViewController, UITextViewDelegate
 {
+    
+    var reference: FIRDatabaseReference!;
     
     @IBOutlet weak var addTaskButton: UIButton!
     @IBOutlet weak var taskTextView: UITextView!;
@@ -27,12 +30,17 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
     
     override func viewDidLoad()
     {
+        // Disables "Add Task" button so that user cannot add unfinished tasks.
         self.addTaskButton.isEnabled = false;
+        // Checks to see if "Add Task" button should be enabled (that is, task is complete).
         self.checkForButton();
+        // Sets minimum date for datePicker as current date so user cannot add tasks that will end in the past.
         self.datePicker.minimumDate = NSDate(timeIntervalSinceNow: 0) as Date;
+        
+        self.reference = FIRDatabase.database().reference();
     }
     
-    // Checks to see if button should be enabled.
+    // Checks to see if "Add Task" button should be enabled (if task is complete).
     func checkForButton()
     {
         if (isFilledOut())
@@ -157,6 +165,10 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         taskTextView.resignFirstResponder();
         
         var priority:String = "";
+        let name:String = taskTextView.text;
+        let dueDate:String = dateLabel.text!;
+        let dueTime:String = timeLabel.text!;
+        let userID:String = (FIRAuth.auth()?.currentUser?.uid)!;
         
         // Check what priority is depending on low, medium, and high booleans.
         if (low)
@@ -173,7 +185,9 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
         }
         
         // Add task.
-        taskManager.addTask(name: taskTextView.text, priority: priority, dueDate: dateLabel.text!, dueTime: timeLabel.text!);
+        taskManager.addTask(name: name, priority: priority, dueDate: dueDate, dueTime: dueTime);
+        
+        self.reference.child("Users").child(userID).setValue(["Name": name, "Priority": priority, "DueDate": dueDate, "DueTime": dueTime]);     
         
         // Dismiss keyboard and pop user back to main scene.
         self.view.endEditing(true);

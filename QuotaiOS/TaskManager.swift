@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 var taskManager:TaskManager = TaskManager();
 
@@ -21,6 +22,9 @@ struct Task
 class TaskManager: NSObject
 {
     var taskList = [Task]();
+    var reference = FIRDatabase.database().reference();
+    
+    
     
     func addTask(name: String, priority: String, dueDate: String, dueTime: String)
     {
