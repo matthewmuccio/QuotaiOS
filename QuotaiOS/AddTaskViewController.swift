@@ -29,6 +29,7 @@ class AddTaskViewController: UIViewController, UITextViewDelegate
     {
         self.addTaskButton.isEnabled = false;
         self.checkForButton();
+        self.datePicker.minimumDate = NSDate(timeIntervalSinceNow: 0) as Date;
     }
     
     // Checks to see if button should be enabled.
