@@ -6,7 +6,11 @@ target 'QuotaiOS' do
   use_frameworks!
 
   # Pods for QuotaiOS
+    pod 'Firebase'
     pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
 
   target 'QuotaiOSTests' do
     inherit! :search_paths

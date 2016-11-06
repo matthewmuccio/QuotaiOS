@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19DFCA2F1C58596A100A85F8BAD3D398"
+               BlueprintIdentifier = "40D89567DFAE2E02976866444F1BA56D"
                BuildableName = "Pods_QuotaiOS.framework"
                BlueprintName = "Pods-QuotaiOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19DFCA2F1C58596A100A85F8BAD3D398"
+            BlueprintIdentifier = "40D89567DFAE2E02976866444F1BA56D"
             BuildableName = "Pods_QuotaiOS.framework"
             BlueprintName = "Pods-QuotaiOS"
             ReferencedContainer = "container:Pods.xcodeproj">
